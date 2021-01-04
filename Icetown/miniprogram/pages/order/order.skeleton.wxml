@@ -1,0 +1,127 @@
+<!--
+此文件为开发者工具生成，生成时间: 2020/12/30 上午12:05:00 
+使用方法：
+在 C:\Users\周兆洋\WeChatProjects\Icetown\miniprogram\pages\order\order.wxml 引入模板
+
+```
+<import src="order.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
+```
+
+在 C:\Users\周兆洋\WeChatProjects\Icetown\miniprogram\pages\order\order.wxss 中引入样式
+```
+@import "./order.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="order">
+      <view class="order-conidition">
+        <view class="sk-transparent sk-text-32-2222-968 sk-text">准备中</view>
+        <view class="sk-transparent sk-text-32-2222-758 sk-text">进行中</view>
+        <view class="sk-transparent sk-text-32-2222-838 sk-text">已完成</view>
+      </view>
+      <view class="order-box">
+        <view class="order-info">
+          <view class="order-info-top" style="border: none;">
+            <view class="order-serial sk-transparent sk-text-22-0000-726 sk-text">NO160556522452</view>
+            <view class="order-delete">
+              <image class="auto-img delete-img sk-image"></image>
+            </view>
+          </view>
+          <view class="product-box">
+            <view class="product-detail">
+              <view class="smaill-img">
+                <image class="auto-img product-img sk-image"></image>
+              </view>
+              <view class="peoduct-detail-info">
+                <view class="product-top">
+                  <view class="product-title sk-transparent sk-text-27-1429-963 sk-text">一见倾心慕斯</view>
+                </view>
+                <view class="prouduct-rule sk-transparent sk-text-28-0000-949 sk-text">
+                  1.0磅(13X13(cm))/7-8人/免费配送5套餐具
+                </view>
+                <view class="product-bottom">
+                  <view class="product-price sk-transparent sk-text-18-0000-379 sk-text">￥388.00</view>
+                  <view class="prouduct-count sk-transparent sk-text-23-3333-565 sk-text" style="background-position-x: 50%;">
+                    X1
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view class="product-detail">
+              <view class="smaill-img">
+                <image class="auto-img product-img sk-image"></image>
+              </view>
+              <view class="peoduct-detail-info">
+                <view class="product-top">
+                  <view class="product-title sk-transparent sk-text-27-1429-963 sk-text">一见倾心慕斯</view>
+                </view>
+                <view class="prouduct-rule sk-transparent sk-text-28-0000-363 sk-text">
+                  1.0磅(13X13(cm))/7-8人/免费配送5套餐具
+                </view>
+                <view class="product-bottom">
+                  <view class="product-price sk-transparent sk-text-18-0000-653 sk-text">￥388.00</view>
+                  <view class="prouduct-count sk-transparent sk-text-23-3333-331 sk-text" style="background-position-x: 50%;">
+                    X1
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view class="product-detail">
+              <view class="smaill-img">
+                <image class="auto-img product-img sk-image"></image>
+              </view>
+              <view class="peoduct-detail-info">
+                <view class="product-top">
+                  <view class="product-title sk-transparent sk-text-27-1429-951 sk-text">一见倾心慕斯</view>
+                </view>
+                <view class="prouduct-rule sk-transparent sk-text-28-0000-485 sk-text">
+                  1.0磅(13X13(cm))/7-8人/免费配送5套餐具
+                </view>
+                <view class="product-bottom">
+                  <view class="product-price sk-transparent sk-text-18-0000-956 sk-text">￥388.00</view>
+                  <view class="prouduct-count sk-transparent sk-text-23-3333-420 sk-text" style="background-position-x: 50%;">
+                    X1
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view class="product-detail">
+              <view class="smaill-img">
+                <image class="auto-img product-img sk-image"></image>
+              </view>
+              <view class="peoduct-detail-info">
+                <view class="product-top">
+                  <view class="product-title sk-transparent sk-text-27-1429-103 sk-text">一见倾心慕斯</view>
+                </view>
+                <view class="prouduct-rule sk-transparent sk-text-28-0000-273 sk-text">
+                  1.0磅(13X13(cm))/7-8人/免费配送5套餐具
+                </view>
+                <view class="product-bottom">
+                  <view class="product-price sk-transparent sk-text-18-0000-724 sk-text">￥388.00</view>
+                  <view class="prouduct-count sk-transparent sk-text-23-3333-614 sk-text" style="background-position-x: 50%;">
+                    X1
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class="order-time sk-transparent sk-text-24-0000-467 sk-text">
+            2020-12-29 23:40:00
+          </view>
+          <view class="number-info">
+            <view class="number-count sk-transparent">共计算
+              <text class="num sk-transparent sk-opacity">1</text> 件商品
+            </view>
+            <view class="number-price sk-transparent">总计
+              <text class="num sk-transparent sk-text-20-0000-257 sk-text" style="background-position-x: 100%;">￥388.00</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

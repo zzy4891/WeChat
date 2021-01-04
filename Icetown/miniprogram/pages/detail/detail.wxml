@@ -1,0 +1,46 @@
+<import src="detail.skeleton.wxml" />
+<template is="skeleton" wx-if="{{loading}}"></template>
+<view wx:else>
+  <view class='detail-box' wx:for="{{detailData}}" wx:key="*this">
+    <view class="detail-img-box">
+      <image class='auto-img detail-img' src='{{item.img}}'></image>
+    </view>
+    <view class="detail-name">{{item.name}}</view>
+    <view class="detail-price">￥{{item.price}}.00</view>
+    <view class="detail-desc">{{item.desc}}</view>
+
+    <!-- 规格处理 -->
+    <view>
+      <block class="detail-rule-box" wx:for="{{item.rules}}" wx:key="o" wx:for-index='o' wx:for-item="m">
+        <view class="detail-rule-title">{{m.title}}</view>
+        <view class="dtail-rule-info">
+          <view class="detail-rule-rules {{v.isselect ? 'active' : ''}}" wx:for="{{m.rule}}" wx:key="i" wx:for-item="v"
+            wx:for-index="i" data-select-index="{{o}}" data-attr-index="{{i}}" data-rules="{{item.rules}}"
+            bindtap="toggleMenu">
+            {{v.delrule}}
+          </view>
+        </view>
+      </block>
+    </view>
+
+    <!-- 详情图片 -->
+    <view class="detail-desc-img" wx:for="{{item.detailimg}}" wx:key="*this">
+      <image class='auto-img detail-img-info' src='{{item}}'></image>
+    </view>
+    <view class="detail-toast" wx:for="{{item.toastData[0]}}" wx:key="*this">{{item}}</view>
+    <!-- 底部按钮 -->
+    <view class="detail-btn">
+      <view class="detail-btn-price" catchtap="addShopcart" wx:if="{{isAuth}}">加入购物车</view>
+      <button wx:else class="open-btn" open-type="getUserInfo" bindgetuserinfo="getUserAuthInfo">加入购物车</button>
+      <view class="detail-btn-buy" bindtap="goBuy">立即购买</view>
+    </view>
+
+  </view>
+  <view class="shopcar {{shopCount > 0 ? 'shpcartactive' : ''}}" bindtap="goShopCart">
+    <view class="shopcar-img-box">
+      <image class='auto-img shopcar-img' src='../../images/shopcar05.png' model="widthFix" ></image>
+      <view class="bage {{isAdd ? 'animat' : ''}}" wx:if="{{shopCount > 0}}">{{shopCount}}</view>
+    </view>
+  </view>
+
+</view>

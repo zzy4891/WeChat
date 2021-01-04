@@ -1,0 +1,33 @@
+.product{
+  width: 49.7%;
+  height: auto;
+  float: left;
+  margin-right: 2rpx;
+}
+
+.product-deatail{
+  height:auto;
+  width:100%;
+  background-color: #F5F6FA;
+  margin-top: 2rpx;
+}
+.product-deatail-img{
+  width: 100%;
+  height: 374rpx;
+}
+.product-title{
+  height: auto;
+  line-height:46rpx;
+  text-align: center;
+  font-family: '宋体';
+  font-weight: bold;
+  padding: 0 8% ;
+  font-size: 28rpx;
+}
+.product-price{
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  color: #E64340;
+}
+

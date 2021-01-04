@@ -1,0 +1,251 @@
+@import "./pay.skeleton.wxss";
+
+.pay{
+  font-family: '宋体';
+  background-color: #F5F6FA;
+  padding-bottom:110rpx;
+  padding-top: 80rpx;
+}
+
+.pay-address-box{
+  width: 100%;
+  height: auto;
+}
+
+.address-head{
+  height: 80rpx;
+  width: calc(100% - 40rpx);
+  background-color: #F5F6FA;
+  line-height: 80rpx;
+  padding: 0 20rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.top{
+  position: fixed;
+  top: 0;
+  border-bottom: 1px dashed #ccc;
+}
+.address-title{
+  width: 90%;
+}
+
+.address-icon{
+  width: 10%;
+  height: 80rpx;
+}
+.address-img{
+  width:40rpx;
+  height:40rpx;
+  margin-top: 18rpx;
+  float: right;
+}
+
+.address-detail-info{
+  width: calc(100% -40rpx);
+  height: auto;
+  background-color: white;
+  padding:20rpx;
+  
+}
+.address-info-box{
+  border-top-right-radius: 18rpx;
+  border-top-left-radius: 18rpx;
+  border-bottom-left-radius: 18rpx;
+  border-bottom-right-radius: 18rpx;
+  padding:0 20rpx;
+  background-color:#F5F6FA ;
+}
+.info-box{
+  display: flex;
+  justify-content: space-between;
+}
+.info-box:nth-child(2){
+  border-bottom: 1px dashed #ccc;
+  border-top: 1px dashed #ccc; 
+}
+
+.info{
+  width: 75%;
+  font-size: 26rpx;
+  line-height: 70rpx;
+}
+
+.address-name{
+  width: 25%;
+  height: 70rpx;
+  line-height:70rpx;
+  letter-spacing: 8rpx;
+}
+.address-tel{
+  width: 25%;
+  height: 70rpx;
+  line-height:70rpx;     
+  letter-spacing: 29rpx;                          
+}
+.address-info{
+  width: 25%;
+  height: auto;
+  line-height:70rpx;
+}
+
+.pay-product-box{
+  width: calc(100% - 40rpx);
+  height: auto;
+  padding: 20rpx;
+  background-color: white;
+  /* margin: 20rpx 0; */
+  
+}
+
+.pay-product-info{
+  width: calc(100% - 40rpx);
+  height: auto;
+  padding:20rpx;
+  background-color: #F5F6FA;
+  border-top-right-radius: 18rpx;
+  border-top-left-radius: 18rpx;
+  border-bottom-left-radius: 18rpx;
+  border-bottom-right-radius: 18rpx;
+}
+
+.product-box {
+  width: calc(100% -20rpx);
+  padding: 20rpx;
+  background-color: white;
+ 
+}
+
+.product-detail {
+  width: calc(100% -20rpx);
+  height: 180rpx;
+  margin-bottom: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  background-color: #F5F6FA;
+}
+
+.product-detail:last-child {
+  margin-bottom: 0;
+}
+
+.smaill-img {
+  width: 176rpx;
+  height: 176rpx;
+  margin-right: 20rpx;
+  /* background-color: aqua; */
+}
+
+.product-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.peoduct-detail-info {
+  flex: 1;
+  height: 176rpx;
+  /* background-color: oldlace; */
+}
+
+.product-top {
+  position: relative;
+  height: 70rpx;
+  line-height: 70rpx;
+}
+
+.product-title {
+  width: 100%;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: left;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  
+}
+
+.product-bottom {
+  display: flex;
+  justify-content: space-between;
+  height: 100rpx;
+}
+
+.prouduct-rule {
+  width: 100%;
+  height: 50rpx;
+  font-size: 22rpx;
+  line-height: 50rpx;
+  color: #ccc;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.product-price {
+  width: 80%;
+  height: 60rpx;
+  font-weight: bold;
+  line-height: 50rpx;
+  color: #FF4141;
+}
+
+.prouduct-count {
+  width: 20%;
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  color: #FF4141;
+}
+.del-img{
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  top: 6rpx;
+  right:6rpx;
+  z-index: 1111;
+}
+.small-del-img{
+  width: 30rpx;
+  height: 30rpx;
+}
+.number-info{
+  height: 80rpx;
+  width: calc(100% - 40rpx);
+  background-color: #F5F6FA;
+  line-height: 80rpx;
+  padding: 0 20rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.number-count{
+  width: 50%;
+ 
+}
+.number-price{
+  width: 50%;
+  text-align: right;
+}
+.num{
+  color: #FF4141;
+}
+.getcount-box{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  background-color: whitesmoke;
+  padding:10rpx 20rpx;
+}
+.product-submit{
+  width: calc(100% - 40rpx);
+  border-radius: 50rpx;
+  background-color:#FF4141;
+  color: white;
+}

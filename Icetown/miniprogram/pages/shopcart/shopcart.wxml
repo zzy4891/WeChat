@@ -1,0 +1,45 @@
+<import src="shopcart.skeleton.wxml" />
+<template is="skeleton" wx-if="{{loading}}"></template>
+
+<view wx:else>
+  <view class='shopcart'>
+    <view class="shop-top-img">
+      <image class='auto-img banner-img' src='../../images/row05.jpg'></image>
+    </view>
+    <view class='product-box' wx:for="{{productData}}" wx:key="index1">
+        <view class="product-detail" data-route="../../pages/detail/detail?_id={{item.product._id}}" bindtap="goDetail"
+          data-current-index="index">
+          <view class='smaill-img'>
+            <image class='auto-img product-img' src='{{item.product.img}}'></image>
+          </view>
+          <view class="peoduct-detail-info">
+            <view class="product-top">
+              <view class="product-title">{{item.product.name}}</view>
+              <view class="del-img" data-_id='{{item._id}}' catchtap='removeShopcart'>
+                <image class='auto-img small-del-img' src='../../images/delete02.png'></image>
+              </view>
+            </view>
+            <view class="prouduct-rule">
+              {{item.newRules}}
+            </view>
+            <view class="product-bottom">
+              <view class="product-price">￥{{item.product.price}}.00</view>
+              <view class="prouduct-count">
+                X{{item.scount}}
+              </view>
+            </view>
+          </view>
+        </view>
+    </view>
+
+  </view>
+  <view class="product-btn">
+    <view class="delete-shopcart" catchtap='removeAllData'>
+      <image class='auto-img delete-img' src='../../images/delete02.png'></image>
+    </view>
+    <view class="getcount">
+      <view class='get-price'>￥{{proInfo.total}}.00</view>
+      <view class="get-count-btn" catchtap="goAccount">立即结算</view>
+    </view>
+  </view>
+</view>

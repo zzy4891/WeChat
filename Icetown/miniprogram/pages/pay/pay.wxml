@@ -1,0 +1,81 @@
+<import src="pay.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
+
+<view wx:else>
+  <view class="pay">
+      <view class="pay-address-box">
+      <!-- 地址头部 -->
+        <view class="address-head top">
+          <view class="address-title" bindtap="goAddress">填写配送信息</view>
+          <view class="address-icon">
+              <image class='auto-img address-img' src='../../images/address-icon.png'></image>
+          </view>
+        </view>
+        <!-- 详细地址信息 -->
+        <view class="address-detail-info" wx:if="{{addressInfo.datailAddress}}">  
+          <view class="address-info-box">  
+            <view class="info-box">
+              <view class='address-name'> 收货人:</view>
+              <view class="info">{{addressInfo.receiver}}</view>
+            </view>
+            <view class="info-box">
+              <view class='address-tel'>电话:</view>
+              <view class="info">{{addressInfo.phone}}</view>
+            </view>
+            <view class="info-box">
+              <view class='address-info'>地址信息:</view> 
+              <view class="info">{{addressInfo.datailAddress}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <!-- 订单头部 -->
+      <view class="address-head">
+        <view class="address-title">订单信息</view>
+        <view class="address-icon">
+            <image class='auto-img address-img' src='../../images/address-icon.png'></image>
+        </view>
+      </view>
+      <!-- 商品信息 -->
+      <view class='product-box' wx:for="{{productData}}" wx:key="index1">
+        <view class="product-detail">
+          <view class='smaill-img'>
+            <image class='auto-img product-img' src='{{item.product.img}}'></image>
+          </view>
+          <view class="peoduct-detail-info">
+            <view class="product-top">
+              <view class="product-title">{{item.product.name}}</view>
+              <view class="del-img" data-_id='{{item._id}}' catchtap='removeShopcart'>
+                <image class='auto-img small-del-img' src='../../images/delete02.png'></image>
+              </view>
+            </view>
+            <view class="prouduct-rule">
+              {{item.newRules}}
+            </view>
+            <view class="product-bottom">
+              <view class="product-price">￥{{item.product.price}}.00</view>
+              <view class="prouduct-count">
+                X{{item.scount}}
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <!-- 商品数量、价格合计 -->
+      <view class="number-info">
+            <view class="number-count">共计算
+              <text class="num">{{proInfo.count}}</text>
+              件商品
+            </view>
+            <view class="number-price">总计  
+                <text class="num">￥{{proInfo.total}}.00</text>
+            </view>
+      </view>
+      <!-- 底部结算 -->
+      <view class="getcount-box">
+        <view class="product-submit" bindtap="payAccount">
+          立即结算
+        </view>
+      </view>
+  </view>
+</view>

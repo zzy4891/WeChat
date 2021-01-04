@@ -1,0 +1,13 @@
+<view class="clearfix">
+  <view class="product" data-route="../../pages/detail/detail?_id={{productData._id}}" bindtap="goDetail" data-current-index="index">
+    <view class="product-deatail">
+      <image class='auto-img product-deatail-img' src='{{productData.img}}'></image>
+      <view class="product-title">
+        {{productData.name}}
+      </view>
+      <view class="product-price">
+        ￥{{productData.price}}.00
+      </view>
+    </view>
+  </view>
+</view>

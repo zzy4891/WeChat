@@ -1,0 +1,63 @@
+<!--
+此文件为开发者工具生成，生成时间: 2020/12/30 下午5:04:00 
+使用方法：
+在 C:\Users\周兆洋\WeChatProjects\Icetown\miniprogram\pages\my\my.wxml 引入模板
+
+```
+<import src="my.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
+```
+
+在 C:\Users\周兆洋\WeChatProjects\Icetown\miniprogram\pages\my\my.wxss 中引入样式
+```
+@import "./my.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="my">
+      <view class="my-bg">
+        <view class="my-info">
+          <view class="my-img">
+            <image class="auto-img my-img-box sk-image" mode="widthFix"></image>
+          </view>
+          <view class="nickname one-text sk-transparent sk-text-14-2857-965 sk-text" style="background-position-x: 50%;">南城下了雪</view>
+        </view>
+      </view>
+      <view class="list">
+        <view class="list-item" style="border: none;">
+          <view class="title fl sk-transparent sk-text-36-0000-882 sk-text">哈哈啊啊啊</view>
+          <view class="arrow fr">
+            <image class="auto-img arrow-img-box sk-image" mode="widthFix" style="height: 20px;"></image>
+          </view>
+        </view>
+        <view class="list-item" style="border: none;">
+          <view class="title fl sk-transparent sk-text-36-0000-355 sk-text">哈哈啊啊啊</view>
+          <view class="arrow fr">
+            <image class="auto-img arrow-img-box sk-image" mode="widthFix" style="height: 20px;"></image>
+          </view>
+        </view>
+        <view class="list-item" style="border: none;">
+          <view class="title fl sk-transparent sk-text-36-0000-943 sk-text">哈哈啊啊啊</view>
+          <view class="arrow fr">
+            <image class="auto-img arrow-img-box sk-image" mode="widthFix" style="height: 20px;"></image>
+          </view>
+        </view>
+        <view class="list-item" style="border: none;">
+          <view class="title fl sk-transparent sk-text-36-0000-130 sk-text">哈哈啊啊啊</view>
+          <view class="arrow fr">
+            <image class="auto-img arrow-img-box sk-image" mode="widthFix" style="height: 20px;"></image>
+          </view>
+        </view>
+        <view class="list-item">
+          <view class="title fl sk-transparent sk-text-36-0000-173 sk-text">哈哈啊啊啊</view>
+          <view class="arrow fr">
+            <image class="auto-img arrow-img-box sk-image" mode="widthFix" style="height: 20px;"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

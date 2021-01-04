@@ -1,0 +1,48 @@
+<import src="home.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}"></template>
+
+<view class="home" wx:else>
+  <view class="home-content">
+    <view class="home-box">
+      <!-- 头部 -->
+      <view class="logo-box">
+        <view class="shop-name">8号公园</view>
+      </view>
+      <!-- 轮播图部分 -->
+      <view class="home-banner">
+        <swiper class='swiper' indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{url}}"  
+        wx:key="*this">
+          <swiper-item>
+            <view class="bg-banner">
+              <image class='auto-img img-box' src='{{item}}'></image>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+      </view>
+      
+      <!-- 列表部分 -->
+      <view class="menu-list">
+        <view class="aside-menu">
+          <view class="aside-item {{activeMenuIndex == index ? 'active' : ''}}" 
+          wx:for='{{menuNav}}' 
+          wx:key='index' 
+          bindtap='toggleMenu'
+          data-index="{{index}}"
+          data-type="{{item.type}}"          
+          >{{item.title}}</view>
+          
+        </view>
+        <view class="menu-content">
+          <view>
+            <image class='auto-img product-banner' src='../../images/row01.jpg'></image>
+          </view>
+            <product wx:for="{{products}}" wx:key="index" product-data="{{item}}"></product>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,30 @@
+<view class="my">
+  <view class="my-bg">
+    <view class="my-info" wx:if="{{isAuth}}">
+      <view class="my-img">
+        <image class="auto-img my-img-box" mode="widthFix" src="{{userInfo.img}}"></image>
+      </view>
+      <view class="nickname one-text">{{userInfo.nickname}}</view>
+    </view>
+    <button wx:else class="auth-btn" open-type="getUserInfo" bindgetuserinfo="getUserAuthInfo">获取头像</button>
+  </view>
+
+  <view class="list">
+    <view wx:if="{{isAuth}}">
+      <view class="list-item" wx:for="{{listData}}" wx:key="index" data-url="{{item.url}}" bindtap="goPage">
+        <view class="title fl">{{item.title}}</view>
+        <view class="arrow fr">
+          <image class="auto-img arrow-img-box" mode="widthFix" src="../../images/address-icon.png"></image>
+        </view>
+      </view>
+    </view>
+    <view wx:else>
+      <view class="list-item" wx:for="{{listData}}" wx:key="index">
+        <view class="title fl">{{item.title}}</view>
+        <view class="arrow fr">
+          <image class="auto-img arrow-img-box" mode="widthFix" src="../../images/address-icon.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

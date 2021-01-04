@@ -1,0 +1,63 @@
+<import src="order.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}"></template>
+<view wx:else>
+  <view class='order'>
+    <view class="order-box">
+      <!-- 订单盒子 -->
+      <view class="order-info" wx:for="{{orderData}}" wx:key='index'>
+        <!-- 订单头部 -->
+        <view class="order-info-top">
+          <view class="order-serial">{{item.orderNo}}</view>
+          <view class="order-delete" data-orderno='{{item.orderNo}}' bindtap="removerOrder">
+            <image class='auto-img delete-img' src='../../images/delete02.png'></image>
+          </view>
+        </view>
+        <!-- 商品信息 -->
+        <view class='product-box'>
+          <view class="product-detail" wx:for="{{item.products}}" wx:key='i'>
+            <view class='smaill-img'>
+              <image class='auto-img product-img' src='{{item.product.img}}'></image>
+            </view>
+            <view class="peoduct-detail-info">
+              <view class="product-top">
+                <view class="product-title">{{item.product.name}}</view>
+              </view>
+              <view class="prouduct-rule">
+                {{item.newRules}}
+              </view>
+              <view class="product-bottom">
+                <view class="product-price">￥{{item.product.price}}.00</view>
+                <view class="prouduct-count">
+                  X{{item.scount}}
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <!-- 配送信息 -->
+        <view class="order-address">
+          <view class="address-box m">配送信息</view>
+          <view class="address-info"> {{item.address.receiver}}</view>
+          <view class="address-info"> {{item.address.phone}}</view>
+          <view class="address-info"> {{item.address.detailAddress}}</view>
+        </view>
+        <!-- 订单时间 -->
+        <view class="order-time">
+          {{item.date}}
+        </view>
+        <!-- 订单总量 -->
+        <view class="number-info">
+          <view class="number-count">共计算
+            <text class="num">{{item.productCount}}</text>
+            件商品
+          </view>
+          <view class="number-price">总计
+            <text class="num">￥{{item.productTotal}}.00</text>
+          </view>
+        </view>
+      </view>
+      <view class="notdata" wx:if="{{!isHas}}">没有更多订单数据了···</view>
+    </view>
+
+  </view>
+</view>

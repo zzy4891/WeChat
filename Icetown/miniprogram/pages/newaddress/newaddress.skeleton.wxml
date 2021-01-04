@@ -1,0 +1,66 @@
+<!--
+此文件为开发者工具生成，生成时间: 2020/12/28 上午10:49:41 
+使用方法：
+在 C:\Users\周兆洋\WeChatProjects\Icetown\miniprogram\pages\newaddress\newaddress.wxml 引入模板
+
+```
+<import src="newaddress.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
+```
+
+在 C:\Users\周兆洋\WeChatProjects\Icetown\miniprogram\pages\newaddress\newaddress.wxss 中引入样式
+```
+@import "./newaddress.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="newaddress">
+      <view class="newaddress-info">
+        <view class="info-item">
+          <view class="fl receive sk-transparent sk-text-26-6667-150 sk-text">收货人</view>
+          <view class="fl ipt">
+            <view placeholder="请输入收货人姓名" class="sk-image"></view>
+          </view>
+        </view>
+        <view class="info-item">
+          <view class="fl receive sk-transparent sk-text-26-6667-716 sk-text">电话</view>
+          <view class="fl ipt">
+            <view placeholder="请输入收货人电话" class="sk-image"></view>
+          </view>
+        </view>
+        <view class="info-item">
+          <view class="fl receive sk-transparent sk-text-26-6667-925 sk-text">地区</view>
+          <view class="fl ipt">
+            <view class="picker-box sk-transparent sk-text-28-3333-869 sk-text sk-image" mode="region">
+              请选择省/市/区
+            </view>
+          </view>
+        </view>
+        <view class="info-item">
+          <view class="fl receive sk-transparent sk-text-26-6667-750 sk-text">详细地址</view>
+          <view class="fl ipt">
+            <view placeholder="请选择街道门牌、楼层房间号等信息" class="sk-image"></view>
+          </view>
+        </view>
+        <view class="info-item">
+          <view class="fl receive sk-transparent sk-text-26-6667-518 sk-text">邮政编码</view>
+          <view class="fl ipt">
+            <view placeholder="请输入您的邮编" class="sk-image"></view>
+          </view>
+        </view>
+      </view>
+      <view class="default-address clearfix sk-pseudo sk-pseudo-circle">
+        <view class="fl default-title sk-transparent sk-text-27-4194-770 sk-text">设置默认地址</view>
+        <view class="fr">
+          <switch color="#EFEFEF"></switch>
+        </view>
+      </view>
+    </view>
+    <view class="submit-box">
+      <view class="submit-btn sk-transparent sk-text-27-1429-436 sk-text" style="background-position-x: 50%;">提交</view>
+    </view>
+  </view>
+</template>

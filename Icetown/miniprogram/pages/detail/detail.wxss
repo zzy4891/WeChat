@@ -1,0 +1,170 @@
+@import "./detail.skeleton.wxss";
+
+.detail-box{
+  width: 100%;
+  height: 100%;
+  font-family: "宋体";
+  padding-bottom: 100rpx;
+  position: relative;
+}
+.detail-img-box{
+  width: 100%;
+  height: 700rpx;
+}
+.detail-img{
+  height: 700rpx;
+}
+.detail-name{
+  font-family: "宋体";
+  padding: 20rpx;
+  font-weight: bold;
+}
+.detail-desc{
+  font-size: 28rpx;
+  padding:0rpx 20rpx 20rpx 20rpx;
+  background-color: whitesmoke;
+  line-height: 50rpx;
+}
+.detail-price{
+  padding:0rpx 20rpx 20rpx 30rpx;
+  color: #E64340;
+  font-weight: bold;
+}
+.detail-btn{
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: whitesmoke;
+}
+.detail-rule-title{
+  font-size: 28rpx;
+  padding:14rpx 20rpx 30rpx 20rpx;
+}
+.dtail-rule-info{
+  width: 90%;
+  margin:0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.detail-rule-rules{
+  width: 40%;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  margin-bottom: 20rpx;
+  font-size: 24rpx;
+  background-color: white;
+  border-top-left-radius: 16rpx;
+  border-top-right-radius: 16rpx;
+  border-bottom-right-radius: 16rpx;
+  border-bottom-left-radius: 16rpx;
+  cursor: pointer;
+}
+
+.active{
+  background-color: #E64340;
+  color: white;
+}
+.detail-desc-img{
+  padding: 20rpx;
+}
+.detail-img-info{
+  height: 500rpx;
+}
+.detail-toast{
+  font-size: 26rpx;
+  line-height: 45rpx;
+  padding: 0 20rpx;
+}
+
+.detail-btn-price{
+  width: 50%;
+  height: 100rpx;
+  background-color: #F0F1F2;
+  line-height: 100rpx;
+  text-align: center;
+  color: #E64340;
+  cursor: pointer;
+}
+.detail-btn-buy{
+  width: 50%;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color: white;
+  background-color:#EB4124 ;
+  cursor: pointer;
+}
+.shopcar{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  position: fixed;
+  top: 76%;
+  right: 2%; 
+  display: none;
+  cursor: pointer;
+}
+.shopcar-img-box{
+  position: relative;
+  cursor: pointer;
+}
+.shopcar-img{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.bage{
+  position: absolute;
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 50%;
+  background-color: white;
+  font-size: 20rpx;
+  top: 10rpx;
+  right: 0;
+  line-height: 30rpx;
+  text-align: center;
+  color: #EB4124;
+  
+}
+/* 购物车图标动画 */
+.animat{
+  animation:bageaction .3s linear 0s 1 normal running;
+}
+
+@keyframes bageaction{
+  0%{
+    top:-12rpx ;
+  }
+  20%{
+    top:-18rpx ;
+  }
+  40%{
+    top: -6rpx;
+  }
+  60%{
+    top:-18rpx ;
+  }
+  80%{
+    top: -6rpx;
+  }
+  100%{
+    top: -12rpx;
+  }
+}
+.shpcartactive{
+ display: block;
+}
+
+.open-btn{
+  padding: 0;
+  text-align: center;
+  line-height: 100rpx;
+  color: #E64340;
+}

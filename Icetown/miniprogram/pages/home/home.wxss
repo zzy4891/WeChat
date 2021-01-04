@@ -1,0 +1,105 @@
+@import "./home.skeleton.wxss";
+page{
+  height: 100%;
+  
+}
+.home{
+  height: 100%;
+}
+
+.home-content{
+  width: 100%;
+  height: 100%;
+
+}
+
+.home-box{
+   height: 100%;
+}
+
+.logo-box{
+  width: 100%;
+  padding: 20rpx;
+  color: white;
+  background-color:#353535 ;
+  text-align: center;
+  position: fixed;
+  z-index: 9999;
+}
+
+.shop-name{
+  font-size: 30rpx;
+  color: white;
+}
+.home-banner{
+  width: 100%;
+  height:400rpx;
+  padding-top: 80rpx;
+}
+.swiper{
+  height: 400rpx;
+}
+.bg-banner{
+  width: 100%;
+  height: 400rpx;
+  /* background-color: red; */
+
+}
+.img-box{
+  height:400rpx;
+}
+.row-img{
+  height: 200rpx;
+}
+.aside-menu{
+  width: 160rpx;
+  height: 100%;
+  background-color: white;
+  overflow-y: auto;
+}
+
+.menu-content{
+  width: 100%;
+  height: calc(100% - 20rpx);
+  background-color: white;
+  position: absolute;
+  top:100rpx;
+}
+
+.aside-item{
+  height: 84rpx;
+  line-height: 84rpx;
+  text-align: center;
+  font-size: 28rpx;
+}
+
+.menu-list{
+  height: calc(100% - 160rpx);
+  position: relative;
+}
+.aside-menu{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  
+}
+.aside-item{
+  background-color:whitesmoke ;
+  width: 25%;
+  padding: 8rpx 0rpx;
+}
+.active{
+  background-color: #E64340;
+  color: white;
+}
+.menu-content{
+  height: auto;
+  width: 100%;
+ 
+}
+.product-banner{
+  height: 200rpx;
+  border-right: 1px solid #ccc;
+
+}

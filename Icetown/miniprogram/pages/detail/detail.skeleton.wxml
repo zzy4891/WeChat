@@ -1,0 +1,76 @@
+<!--
+此文件为开发者工具生成，生成时间: 2020/12/22 下午4:07:47 
+使用方法：
+在 C:\Users\周兆洋\WeChatProjects\Icetown\miniprogram\pages\detail\detail.wxml 引入模板
+
+```
+<import src="detail.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
+```
+
+在 C:\Users\周兆洋\WeChatProjects\Icetown\miniprogram\pages\detail\detail.wxss 中引入样式
+```
+@import "./detail.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="detail-box">
+      <view class="detail-img-box">
+        <image class="auto-img detail-img sk-image"></image>
+      </view>
+      <view class="detail-name"></view>
+      <view class="detail-price"></view>
+      <view class="detail-desc"></view>
+      <view class="detail-rule-box">
+        <view class="detail-rule-title"></view>
+        <view class="dtail-rule-info">
+          <view class="detail-rule-rules"></view>
+          <view class="detail-rule-rules"></view>
+          <view class="detail-rule-rules"></view>
+          <view class="detail-rule-rules"></view>
+        </view>
+      </view>
+      <view class="detail-rule-box">
+        <view class="detail-rule-title"></view>
+        <view class="dtail-rule-info">
+          <view class="detail-rule-rules"></view>
+          <view class="detail-rule-rules"></view>
+          <view class="detail-rule-rules"></view>
+          <view class="detail-rule-rules"></view>
+        </view>
+      </view>
+      <view class="detail-rule-box">
+        <view class="detail-rule-title"></view>
+        <view class="dtail-rule-info">
+          <view class="detail-rule-rules"></view>
+          <view class="detail-rule-rules"></view>
+          <view class="detail-rule-rules"></view>
+          <view class="detail-rule-rules"></view>
+        </view>
+      </view>
+      <view class="detail-desc-img">
+        <image class="auto-img detail-img-info sk-image"></image>
+      </view>
+      <view class="detail-desc-img">
+        <image class="auto-img detail-img-info sk-image"></image>
+      </view>
+      <view class="detail-desc-img">
+        <image class="auto-img detail-img-info sk-image"></image>
+      </view>
+      <view class="detail-desc-img">
+        <image class="auto-img detail-img-info sk-image"></image>
+      </view>
+      <view class="detail-desc-img">
+        <image class="auto-img detail-img-info sk-image"></image>
+      </view>
+      <view class="detail-toast"></view>
+      <view class="detail-btn">
+        <view class="detail-btn-price">加入购物车</view>
+        <view class="detail-btn-buy">立即购买</view>
+      </view>
+    </view>
+  </view>
+</template>

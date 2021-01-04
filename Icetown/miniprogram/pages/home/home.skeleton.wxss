@@ -1,0 +1,57 @@
+/*
+此文件为开发者工具生成，生成时间: 2020/12/19 下午2:52:17 
+
+在 C:\Users\周兆洋\WeChatProjects\Icetown\miniprogram\pages\home\home.wxss 中引入样式
+```
+@import "./home.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+*/
+.sk-transparent {
+    color: transparent !important;
+  }
+.sk-text-14-2857-507 {
+    background-image: linear-gradient(transparent 14.2857%, #EEEEEE 0%, #EEEEEE 85.7143%, transparent 0%) !important;
+    background-size: 100% 42.0000rpx;
+    position: relative !important;
+  }
+.sk-text {
+    background-origin: content-box !important;
+    background-clip: content-box !important;
+    background-color: transparent !important;
+    color: transparent !important;
+    background-repeat: repeat-y !important;
+  }
+.sk-text-32-5000-813 {
+    background-image: linear-gradient(transparent 32.5000%, #EEEEEE 0%, #EEEEEE 67.5000%, transparent 0%) !important;
+    background-size: 100% 80.0000rpx;
+    position: relative !important;
+  }
+.sk-text-32-5000-44 {
+    background-image: linear-gradient(transparent 32.5000%, #EEEEEE 0%, #EEEEEE 67.5000%, transparent 0%) !important;
+    background-size: 100% 80.0000rpx;
+    position: relative !important;
+  }
+.sk-text-32-5000-21 {
+    background-image: linear-gradient(transparent 32.5000%, #EEEEEE 0%, #EEEEEE 67.5000%, transparent 0%) !important;
+    background-size: 100% 80.0000rpx;
+    position: relative !important;
+  }
+.sk-text-32-5000-189 {
+    background-image: linear-gradient(transparent 32.5000%, #EEEEEE 0%, #EEEEEE 67.5000%, transparent 0%) !important;
+    background-size: 100% 80.0000rpx;
+    position: relative !important;
+  }
+.sk-image {
+    background: #EFEFEF !important;
+  }
+.sk-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: transparent;
+  }

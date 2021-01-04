@@ -1,0 +1,34 @@
+<import src="address.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}"></template>
+<view wx:else>
+  <view class="address">
+    <view class="address-info-box">
+    </view>
+    <view class="address-box">
+      <!-- 地址信息 -->
+      <view class="address-small-box">
+        <view class="address-item" wx:for="{{addressList}}" wx:key='index' data-_id='{{item._id}}'>
+          <view class="address-info" data-_id='{{item._id}}' bindtap="selectAddress">
+            <viwe class="address-info-title">
+              <view class='fl name'>{{item.receiver}}</view>
+              <view class='fl phone'>{{item.phone}}</view>
+              <view class='fl default'>
+                <text class='default-icon' wx:if="{{item.isDefault}}">默认</text>
+              </view>
+            </viwe>
+            <view class="all-address-info">
+              {{item.detailAddress}}
+            </view>
+          </view>
+          <view class="address-edit" bindtap="goNewAddress" data-url='{{url + "?_id=" + item._id}}'>
+            <image class='auto-img edit-icon' src='../../images/edit.png'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 新增地址按钮 -->
+    <view class="address-btn">
+      <view class="address-submit" bindtap="goNewAddress" data-url='{{url}}'>新增地址</view>
+    </view>
+  </view>
+</view>

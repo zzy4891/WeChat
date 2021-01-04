@@ -1,0 +1,61 @@
+<import src="newaddress.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}"></template>
+<view wx:else>
+  <view class="newaddress">
+    <view class="newaddress-info">
+      <!-- 地址栏信息 -->
+      <view class="info-item">
+        <view class="fl receive">收货人</view>
+        <view class="fl ipt">
+          <input placeholder="请输入收货人姓名" value="{{addressInfo.receiver}}" bindchange='changeIptText' data-key='receiver'/>
+        </view>
+      </view>
+      <view class="info-item">
+        <view class="fl receive">电话</view>
+        <view class="fl ipt">
+          <input placeholder="请输入收货人电话" value="{{addressInfo.phone}}" data-key='phone' bindchange='changeIptText'/>
+        </view>
+      </view>
+      <view class="info-item">
+        <view class="fl receive">地区</view>
+        <view class="fl ipt">
+          <picker mode="region" class="picker-box" data-key="area" bindchange='changeIptText'>
+            {{addressInfo.area}}
+          </picker>
+        </view>
+  
+      </view>
+      <view class="info-item">
+        <view class="fl receive">详细地址</view>
+        <view class="fl ipt">
+          <input placeholder="请选择街道门牌、楼层房间号等信息" value="{{addressInfo.detail}}" data-key='detail' bindchange='changeIptText'/>
+        </view>
+      </view>
+      <view class="info-item">
+        <view class="fl receive">邮政编码</view>
+        <view class="fl ipt">
+          <input placeholder="请输入您的邮编" value="{{addressInfo.email}}" data-key='email' bindchange='changeIptText'/>
+        </view>
+      </view>
+    </view>
+    <!--默认地址设置 -->
+    <view class="default-address clearfix">
+      <view class="fl default-title">设置默认地址</view>
+      <view class="fr">
+        <switch checked="{{addressInfo.isDefault}}" data-key="isDefault" color="#00BFFF" bindchange='changeIptText'/>
+      </view>
+    </view>
+    <!-- 删除地址 -->
+    <view class="default-address clearfix" wx:if="{{_id}}" bindtap="delAddress">
+      <image class='auto-img del-icon' src='../../images/delete02.png'></image>
+      
+    </view>
+    
+  </view>
+  <view class="submit-box" wx:if="{{_id}}">
+    <view class="submit-btn" bindtap="saveAddress">保存地址</view>
+  </view>
+  <view class="submit-box" wx:else>
+    <view class="submit-btn" bindtap="commit">新增地址</view>
+  </view>
+</view>
